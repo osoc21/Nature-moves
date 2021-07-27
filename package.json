@@ -1,0 +1,16 @@
+{
+  "name": "nature-moves",
+  "scripts": {
+    "start": "parcel serve ./src/index.html --port 8888",
+    "build": "parcel build ./src/index.html",
+    "build:gh-pages": "parcel build ./src/index.html --public-url ./"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "2.0.0-beta.3.1",
+    "@parcel/transformer-webmanifest": "2.0.0-beta.3.1",
+    "parcel": "2.0.0-beta.3.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3"
+  }
+}

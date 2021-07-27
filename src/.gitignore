@@ -49,4 +49,3 @@ dist
 node_modules
 *.map
 vendor
-.parcel-cache
