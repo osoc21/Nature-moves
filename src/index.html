@@ -7,6 +7,8 @@
     <meta name="description" content="Natuurpunt Mapcomplete" />
     <meta name="author" content="Open Summer Of Code 2021" />
 
+    <link rel="manifest" href="./site.webmanifest">
+
     <link
       rel="apple-touch-icon"
       sizes="57x57"
@@ -135,6 +137,27 @@
       name="twitter:url"
       content="https://osoc.be/editions/2021/nature-moves"
     />
+
+    
+<script>
+  window.addEventListener('load', () => {
+    registerSW();
+  });
+
+  // Register the Service Worker
+  async function registerSW() {
+    if ('serviceWorker' in navigator) {
+      try {
+        await navigator
+              .serviceWorker
+              .register('serviceworker.js');
+      }
+      catch (e) {
+        console.log('SW registration failed');
+      }
+    }
+  }
+</script>
   </head>
 
   <body>
